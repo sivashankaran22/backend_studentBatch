@@ -1,6 +1,6 @@
 import express from "express";
 import {PutStudent, getMatch, postMentor, postStudent } from "../Controlers/profile.js";
-import { client } from "../db.js";
+
 
 const router = express.Router(); 
 
