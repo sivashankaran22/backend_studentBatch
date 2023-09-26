@@ -38,6 +38,6 @@ export function getMatch(req){
 export function PutStudent(curentStudent,updateStudent){
     const database = client.db('BatchDetails')
     const collection = database.collection('Students')
-    const result3 = collection.updateOne({name:curentStudent},{$set:updateStudent})
+    const result3 = collection.updateOne({name:curentStudent},{$set:updateStudent},{includeResultMetadata: false})
     return result3;
 }
